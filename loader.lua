@@ -153,7 +153,7 @@ confetti_particles:setColors(1, 0, 0, 0.84,
                              0, 0, 1, 0.20,
                              1, 0, 1, 0.04)
 
-Games.cah.pt_cards = json.decode(require('assets.game.cards_pt'))
+Games.cah.pt_cards = json.decode(love.filesystem.read('assets/game/cards_pt.json'))
 local blk = chance.helpers.shuffle(Games.cah.pt_cards.blackCards)
 local wht = chance.helpers.shuffle(Games.cah.pt_cards.whiteCards)
 Games.cah.pt_cards = {white = wht, black = blk}
