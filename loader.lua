@@ -207,10 +207,10 @@ Chat_data.INPUT  = {text=''}
 Playlist = {}
 Playlist.music = {
 	love.audio.newSource('assets/audio/music/slowly.ogg', 'stream'),
-	love.audio.newSource('assets/audio/music/Sincerely.ogg', 'stream'),
-	love.audio.newSource('assets/audio/music/Morfin.ogg', 'stream'),
-	love.audio.newSource('assets/audio/music/Cool vibes.ogg', 'stream'),
-	love.audio.newSource('assets/audio/music/Clean soul.ogg', 'stream'),
+	-- love.audio.newSource('assets/audio/music/Sincerely.ogg', 'stream'),
+	-- love.audio.newSource('assets/audio/music/Morfin.ogg', 'stream'),
+	-- love.audio.newSource('assets/audio/music/Cool vibes.ogg', 'stream'),
+	-- love.audio.newSource('assets/audio/music/Clean soul.ogg', 'stream'),
 }
 Playlist.music = chance.helpers.pick_unique(Playlist.music, #Playlist.music)
 Playlist.playing = 1
